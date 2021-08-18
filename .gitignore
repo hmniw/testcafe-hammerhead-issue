@@ -1,0 +1,28 @@
+dist
+dist-*
+node_modules
+
+# Screenshots and videos
+screenshots/
+reports/
+
+# idea files
+.idea/
+
+# dotenv environment variables file
+.env
+.env.test
+
+*.err
+*.log
+*.pid
+
+BrowserStackLocal*
+
+# unit test coverage
+coverage
+
+storybook-static
+
+stats.html
+swag.json

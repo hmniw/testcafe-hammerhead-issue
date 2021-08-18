@@ -1,0 +1,26 @@
+{
+  "clientScripts": [
+    { "content": "(() => {\n\twindow.addEventListener('error', e => {\n\t\tif(/resizeobserver loop limit exceeded/gi.test(e.message))\n\t\t\te.stopImmediatePropagation();\n\t})\n})()" }
+  ],
+  "concurrency": 1,
+  "selectorTimeout": 5000,
+  "assertionTimeout": 5000,
+  "pageLoadTimeout": 10000,
+  "ajaxRequestTimeout": 10000,
+  "pageRequestTimeout": 10000,
+  "disablePageCaching": false,
+  "stopOnFirstFail": false,
+  "debugOnFail": false,
+  "skipJsErrors": false,
+  "skipUncaughtErrors": false,
+  "screenshots": {
+    "takeOnFails": true,
+    "fullPage": true
+  },
+  "videoPath": "reports/screen-captures",
+  "videoOptions": {
+    "singleFile": true,
+    "failedOnly": true,
+    "pathPattern": "${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.mp4"
+  }
+}

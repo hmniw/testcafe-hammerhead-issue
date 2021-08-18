@@ -1,0 +1,6 @@
+{
+  "browserstack.console": "verbose",
+  "browserstack.networkLogs": true,
+  "browserstack.local": "true",
+  "browserstack.idleTimeout": "60"
+}

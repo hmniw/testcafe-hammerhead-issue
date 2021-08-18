@@ -1,0 +1,16 @@
+{
+    "scripts": {
+        "test:testcafe:local": "cross-env STORYBOOK_ADDRESS=http://localhost:6006 RUN_LOCAL=true testcafe chrome ./testcafe/test.testcafe.ts",
+        "test:ci:browserstack:mobile": "cross-env STORYBOOK_ADDRESS=http://localhost:6006 TESTCAFE_BROWSERSTACK_API_POLLING_INTERVAL=\"40000\" ts-node testcafe/scripts/BrowserStackTestRunner.ts mobile"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "dotenv": "^9.0.2",
+        "@ffmpeg-installer/ffmpeg": "^1.0.20",
+        "glob-promise": "^4.1.0",
+        "testcafe": "^1.15.0",
+        "testcafe-browser-provider-browserstack": "^1.13.2-alpha.1",
+        "ts-node": "^9.1.1",
+        "typescript": "^4.2.4"
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": false,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "target": "es5",
+    "jsx": "react",
+    "esModuleInterop": true
+  },
+  "exclude": ["./node_modules/**/*", "dist"]
+}
